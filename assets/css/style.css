@@ -1,0 +1,39 @@
+:root{
+   --background-color: #083B4C;
+   --number-color: #1389B2;
+   --FizzBuzz-color: #F0466F;
+   --Fizz-color: #0CD6A1;
+   --Buzz-color:#FFD166;
+}
+
+body{
+   background-color: var(--background-color);
+}
+
+.square{
+   width: 100px;
+   aspect-ratio: 1;
+}
+
+.center-text-absolute{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.number{
+   background-color: var(--number-color);
+}
+
+.fizzbuzz{
+   background-color: var(--FizzBuzz-color);
+}
+
+.fizz{
+   background-color: var(--Fizz-color);
+}
+
+.buzz{
+   background-color: var(--Buzz-color);
+}
