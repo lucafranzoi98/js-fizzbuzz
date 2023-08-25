@@ -3,16 +3,21 @@ const containerEl = document.getElementById("container");
 for (let i=1; i<=100; i++){
 
    if (i % 3 == 0 && i % 5 == 0) {
-      const FizzBuzzEl = "FizzBuzz ";
-      containerEl.append(FizzBuzzEl);
+      const FizzBuzz = document.createElement("li");
+      FizzBuzz.append("FizzBuzz");
+      containerEl.append(FizzBuzz);
    } else if (i % 3 == 0) {
-      const Fizz = "Fizz ";
+      const Fizz = document.createElement("li");
+      Fizz.append("Fizz");
       containerEl.append(Fizz);
    } else if (i % 5 == 0){
-      const BuzzEl = "Buzz ";
-      containerEl.append(BuzzEl);
+      const Buzz = document.createElement("li");
+      Buzz.append("Buzz");
+      containerEl.append(Buzz);
    } else {
-      containerEl.append(i);
+      const Number = document.createElement("li");
+      Number.append(i);
+      containerEl.append(Number);
    }
 
 
